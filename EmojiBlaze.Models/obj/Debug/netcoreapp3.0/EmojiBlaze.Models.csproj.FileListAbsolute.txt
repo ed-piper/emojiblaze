@@ -1,0 +1,8 @@
+C:\Users\edpip\Projects\EmojiBlaze\EmojiBlaze.Models\bin\Debug\netcoreapp3.0\EmojiBlaze.Models.deps.json
+C:\Users\edpip\Projects\EmojiBlaze\EmojiBlaze.Models\bin\Debug\netcoreapp3.0\EmojiBlaze.Models.dll
+C:\Users\edpip\Projects\EmojiBlaze\EmojiBlaze.Models\bin\Debug\netcoreapp3.0\EmojiBlaze.Models.pdb
+C:\Users\edpip\Projects\EmojiBlaze\EmojiBlaze.Models\obj\Debug\netcoreapp3.0\EmojiBlaze.Models.csprojAssemblyReference.cache
+C:\Users\edpip\Projects\EmojiBlaze\EmojiBlaze.Models\obj\Debug\netcoreapp3.0\EmojiBlaze.Models.AssemblyInfoInputs.cache
+C:\Users\edpip\Projects\EmojiBlaze\EmojiBlaze.Models\obj\Debug\netcoreapp3.0\EmojiBlaze.Models.AssemblyInfo.cs
+C:\Users\edpip\Projects\EmojiBlaze\EmojiBlaze.Models\obj\Debug\netcoreapp3.0\EmojiBlaze.Models.dll
+C:\Users\edpip\Projects\EmojiBlaze\EmojiBlaze.Models\obj\Debug\netcoreapp3.0\EmojiBlaze.Models.pdb

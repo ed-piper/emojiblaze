@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EmojiBlaze.Web", "EmojiBlaze.Web\EmojiBlaze.Web.csproj", "{CA29DAD7-73B3-4C1D-8575-23157FDA9D77}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EmojiBlaze.Models", "EmojiBlaze.Models\EmojiBlaze.Models.csproj", "{8C3E500E-F5AE-43C1-AE16-B5723276F372}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EmojiBlaze.Tests", "EmojiBlaze.Tests\EmojiBlaze.Tests.csproj", "{FC2DA41B-3363-4B92-91E0-C373CA4A0125}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{CA29DAD7-73B3-4C1D-8575-23157FDA9D77}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CA29DAD7-73B3-4C1D-8575-23157FDA9D77}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CA29DAD7-73B3-4C1D-8575-23157FDA9D77}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CA29DAD7-73B3-4C1D-8575-23157FDA9D77}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8C3E500E-F5AE-43C1-AE16-B5723276F372}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8C3E500E-F5AE-43C1-AE16-B5723276F372}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8C3E500E-F5AE-43C1-AE16-B5723276F372}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8C3E500E-F5AE-43C1-AE16-B5723276F372}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FC2DA41B-3363-4B92-91E0-C373CA4A0125}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FC2DA41B-3363-4B92-91E0-C373CA4A0125}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FC2DA41B-3363-4B92-91E0-C373CA4A0125}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FC2DA41B-3363-4B92-91E0-C373CA4A0125}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal

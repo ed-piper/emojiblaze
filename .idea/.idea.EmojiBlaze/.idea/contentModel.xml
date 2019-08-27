@@ -34,7 +34,6 @@
         </e>
       </e>
       <e p="EmojiBlaze.Web" t="IncludeRecursive">
-        <e p=".gitignore" t="Include" />
         <e p="_Imports.razor" t="Include" />
         <e p="App.razor" t="Include" />
         <e p="bin" t="ExcludeRecursive" />
@@ -48,17 +47,20 @@
         </e>
         <e p="Pages" t="Include">
           <e p="_Imports.razor" t="Include" />
-          <e p="Counter.razor" t="Include" />
-          <e p="FetchData.razor" t="Include" />
           <e p="Index.razor" t="Include" />
         </e>
         <e p="Program.cs" t="Include" />
         <e p="Shared" t="Include">
           <e p="MainLayout.razor" t="Include" />
-          <e p="NavMenu.razor" t="Include" />
-          <e p="SurveyPrompt.razor" t="Include" />
         </e>
         <e p="Startup.cs" t="Include" />
+        <e p="Store" t="Include">
+          <e p="Game" t="Include">
+            <e p="GameStage.cs" t="Include" />
+            <e p="GameState.cs" t="Include" />
+            <e p="Player.cs" t="Include" />
+          </e>
+        </e>
         <e p="wwwroot" t="Include">
           <e p="css" t="Include">
             <e p="bootstrap" t="Include">
@@ -85,9 +87,6 @@
             <e p="site.css" t="Include" />
           </e>
           <e p="index.html" t="Include" />
-          <e p="sample-data" t="Include">
-            <e p="weather.json" t="Include" />
-          </e>
         </e>
       </e>
       <e p="packages" t="ExcludeRecursive" />

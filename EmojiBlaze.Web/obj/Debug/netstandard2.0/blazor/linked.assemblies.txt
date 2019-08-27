@@ -1,3 +1,4 @@
+C:\Users\edpip\Projects\EmojiBlaze\EmojiBlaze.Web\obj\Debug\netstandard2.0\blazor\linker\Blazor.Fluxor.dll
 C:\Users\edpip\Projects\EmojiBlaze\EmojiBlaze.Web\obj\Debug\netstandard2.0\blazor\linker\EmojiBlaze.Web.dll
 C:\Users\edpip\Projects\EmojiBlaze\EmojiBlaze.Web\obj\Debug\netstandard2.0\blazor\linker\Microsoft.AspNetCore.Authorization.dll
 C:\Users\edpip\Projects\EmojiBlaze\EmojiBlaze.Web\obj\Debug\netstandard2.0\blazor\linker\Microsoft.AspNetCore.Blazor.dll

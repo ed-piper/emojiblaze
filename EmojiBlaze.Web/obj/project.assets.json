@@ -2,6 +2,19 @@
   "version": 3,
   "targets": {
     ".NETStandard,Version=v2.0": {
+      "Blazor.Fluxor/0.29.0-pre": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.AspNetCore.Components.Web": "3.0.0-preview8.19405.7",
+          "Microsoft.Extensions.DependencyInjection.Abstractions": "3.0.0-preview8.19405.4"
+        },
+        "compile": {
+          "lib/netstandard2.0/Blazor.Fluxor.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Blazor.Fluxor.dll": {}
+        }
+      },
       "Microsoft.AspNetCore.Authorization/3.0.0-preview8.19405.7": {
         "type": "package",
         "dependencies": {
@@ -319,6 +332,20 @@
     }
   },
   "libraries": {
+    "Blazor.Fluxor/0.29.0-pre": {
+      "sha512": "Vs98fxjlO51MBFhhzZSCnUh/dDvB+ZxfM94t6RP0kwIosf3yxJaPp4wMtZcBTpZNC9byNbITn1nA/yyBI+ArZA==",
+      "type": "package",
+      "path": "blazor.fluxor/0.29.0-pre",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENCE",
+        "blazor.fluxor.0.29.0-pre.nupkg.sha512",
+        "blazor.fluxor.nuspec",
+        "lib/netstandard2.0/Blazor.Fluxor.dll",
+        "lib/netstandard2.0/Blazor.Fluxor.xml"
+      ]
+    },
     "Microsoft.AspNetCore.Authorization/3.0.0-preview8.19405.7": {
       "sha512": "3I/ASJPwcttFUZmnKhVI+LAqTmm2npb3CjLuca/DvNcOprJOwGM92m/fpq0G22N84hyXzfIKP6BCIPQ1S8yQag==",
       "type": "package",
@@ -1404,6 +1431,7 @@
   },
   "projectFileDependencyGroups": {
     ".NETStandard,Version=v2.0": [
+      "Blazor.Fluxor >= 0.29.0-pre",
       "Microsoft.AspNetCore.Blazor >= 3.0.0-preview8.19405.7",
       "Microsoft.AspNetCore.Blazor.Build >= 3.0.0-preview8.19405.7",
       "Microsoft.AspNetCore.Blazor.DevServer >= 3.0.0-preview8.19405.7",
@@ -1446,6 +1474,10 @@
     "frameworks": {
       "netstandard2.0": {
         "dependencies": {
+          "Blazor.Fluxor": {
+            "target": "Package",
+            "version": "[0.29.0-pre, )"
+          },
           "Microsoft.AspNetCore.Blazor": {
             "target": "Package",
             "version": "[3.0.0-preview8.19405.7, )"

@@ -1,3 +1,4 @@
+C:\Users\edpip\.nuget\packages\blazor.fluxor\0.29.0-pre\lib\netstandard2.0\Blazor.Fluxor.dll
 C:\Users\edpip\.nuget\packages\microsoft.aspnetcore.authorization\3.0.0-preview8.19405.7\lib\netstandard2.0\Microsoft.AspNetCore.Authorization.dll
 C:\Users\edpip\.nuget\packages\microsoft.aspnetcore.blazor\3.0.0-preview8.19405.7\lib\netstandard2.0\Microsoft.AspNetCore.Blazor.dll
 C:\Users\edpip\.nuget\packages\microsoft.aspnetcore.blazor.httpclient\3.0.0-preview8.19405.7\lib\netstandard2.0\Microsoft.AspNetCore.Blazor.HttpClient.dll

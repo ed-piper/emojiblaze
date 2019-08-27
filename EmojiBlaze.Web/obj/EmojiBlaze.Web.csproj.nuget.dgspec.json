@@ -36,6 +36,10 @@
       "frameworks": {
         "netstandard2.0": {
           "dependencies": {
+            "Blazor.Fluxor": {
+              "target": "Package",
+              "version": "[0.29.0-pre, )"
+            },
             "Microsoft.AspNetCore.Blazor": {
               "target": "Package",
               "version": "[3.0.0-preview8.19405.7, )"

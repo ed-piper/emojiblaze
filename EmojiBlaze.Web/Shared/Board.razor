@@ -1,0 +1,28 @@
+﻿@using Blazor.Fluxor
+@using Store.Game
+@inject IState<GameState> GameState
+@inject IDispatcher Dispatcher
+@inherits Blazor.Fluxor.Components.FluxorComponent
+
+@if (GameState.Value.Cards != null)
+{
+    @foreach (var rowX in GameState.Value.Cards.Select(x => x.X).Distinct())
+    {
+        <div class="d-flex flex-row">
+            @foreach (var card in GameState.Value.Cards.Where(x => x.X == rowX ))
+            {
+                <div class="flex-grow-1">
+                    <CardView Card="@card"></CardView>
+                </div>
+            }
+        </div>
+    }    
+}
+
+@code {
+    protected override void OnInitialized()
+    {
+        base.OnInitialized();
+        GameState.Subscribe(this);
+    }
+}

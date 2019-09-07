@@ -125,3 +125,7 @@ C:\Users\edpip\Projects\EmojiBlaze\EmojiBlaze.Web\obj\Debug\netstandard2.0\Razor
 C:\Users\edpip\Projects\EmojiBlaze\EmojiBlaze.Web\obj\Debug\netstandard2.0\Razor\Shared\AddPlayer.razor.g.cs
 C:\Users\edpip\Projects\EmojiBlaze\EmojiBlaze.Web\obj\Debug\netstandard2.0\RazorDeclaration\Shared\PlayerList.razor.g.cs
 C:\Users\edpip\Projects\EmojiBlaze\EmojiBlaze.Web\obj\Debug\netstandard2.0\Razor\Shared\PlayerList.razor.g.cs
+C:\Users\edpip\Projects\EmojiBlaze\EmojiBlaze.Web\obj\Debug\netstandard2.0\RazorDeclaration\Shared\CardView.razor.g.cs
+C:\Users\edpip\Projects\EmojiBlaze\EmojiBlaze.Web\obj\Debug\netstandard2.0\Razor\Shared\CardView.razor.g.cs
+C:\Users\edpip\Projects\EmojiBlaze\EmojiBlaze.Web\obj\Debug\netstandard2.0\RazorDeclaration\Shared\Board.razor.g.cs
+C:\Users\edpip\Projects\EmojiBlaze\EmojiBlaze.Web\obj\Debug\netstandard2.0\Razor\Shared\Board.razor.g.cs

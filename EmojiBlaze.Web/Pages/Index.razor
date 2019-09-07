@@ -1,9 +1,14 @@
 ﻿@page "/"
+@using Blazor.Fluxor
+@using Store.Game
+@inject IState<GameState> GameState
+@inject IDispatcher Dispatcher
+
 <h1>Pairs</h1>
 
 <div class="d-flex justify-content-center">
     <div class="flex-fill">
-        
+        <Board></Board>
     </div>
     <div class="flex-fill">
         <PlayerList></PlayerList>

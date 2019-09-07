@@ -14,7 +14,11 @@
     },
     "frameworks": {
       "netcoreapp3.0": {
-        "projectReferences": {}
+        "projectReferences": {
+          "C:\\Users\\edpip\\Projects\\EmojiBlaze\\EmojiBlaze.Web\\EmojiBlaze.Web.csproj": {
+            "projectPath": "C:\\Users\\edpip\\Projects\\EmojiBlaze\\EmojiBlaze.Web\\EmojiBlaze.Web.csproj"
+          }
+        }
       }
     },
     "warningProperties": {
@@ -37,6 +41,10 @@
         "Microsoft.NET.Test.Sdk": {
           "target": "Package",
           "version": "[16.2.0, )"
+        },
+        "Shouldly": {
+          "target": "Package",
+          "version": "[3.0.2, )"
         },
         "coverlet.collector": {
           "target": "Package",

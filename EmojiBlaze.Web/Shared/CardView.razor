@@ -1,0 +1,12 @@
+﻿@using Blazor.Fluxor
+@using Store.Game
+@inject IState<GameState> GameState
+@inject IDispatcher Dispatcher
+@inherits Blazor.Fluxor.Components.FluxorComponent
+
+<div>@Card.Symbol</div>
+
+@code {
+    [Parameter]
+    public Card Card { get; set; }
+}

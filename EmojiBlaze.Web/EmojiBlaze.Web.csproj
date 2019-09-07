@@ -19,9 +19,4 @@
     <_ContentIncludedByDefault Remove="wwwroot\sample-data\weather.json" />
   </ItemGroup>
 
-  <ItemGroup>
-    <Folder Include="Store\Game\Actions" />
-    <Folder Include="Store\Game\Reducers" />
-  </ItemGroup>
-
 </Project>

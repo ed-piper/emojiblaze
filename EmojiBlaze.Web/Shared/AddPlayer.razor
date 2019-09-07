@@ -1,0 +1,29 @@
+﻿@using Blazor.Fluxor
+@using EmojiBlaze.Web.Store.Game
+@using EmojiBlaze.Web.Store.Game.Actions
+@inject IState<GameState> GameState
+@inject IDispatcher Dispatcher
+
+@if (GameState.Value.GameStage == GameStage.NotStarted)
+{
+    <div>
+        <input placeholder="Player Name" @bind="PlayerName"/>
+        <button @onclick="@(() => Add())">Add Player</button>
+    </div>
+}
+
+@code {
+    private string PlayerName { get; set; }
+    
+    private void Add()
+    {
+        Dispatcher.Dispatch(new AddPlayerAction(PlayerName));
+        PlayerName = string.Empty;
+    }
+    
+    protected override void OnInitialized()
+    {
+        base.OnInitialized();
+        GameState.Subscribe(this);
+    }
+}

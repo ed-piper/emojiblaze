@@ -1,0 +1,29 @@
+﻿@using Blazor.Fluxor
+@using EmojiBlaze.Web.Store.Game.Actions
+@using Store.Game
+@inherits Blazor.Fluxor.Components.FluxorComponent
+@inject IState<GameState> GameState
+@inject IDispatcher Dispatcher
+
+<div>
+    @if (CanStartGame)
+    {
+        <button @onclick="@(() => StartGame())">Start Game</button>
+    }
+
+    @foreach (var player in GameState.Value.Players)
+    {
+        <p>@player.Name Score: 0</p>
+    }
+</div>
+
+@code {
+
+    private bool CanStartGame => GameState.Value.GameStage != GameStage.InProgress &&
+                                 GameState.Value.Players.Count > 1;
+    
+    private void StartGame()
+    {
+        Dispatcher.Dispatch(new StartGameAction());
+    }
+} 

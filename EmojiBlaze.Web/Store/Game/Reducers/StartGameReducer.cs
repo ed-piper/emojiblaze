@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Linq;
 using Blazor.Fluxor;
 using EmojiBlaze.Web.Models.Board;
 using EmojiBlaze.Web.Store.Game;
@@ -22,6 +23,7 @@ namespace Pairs.Store.Game.Reducers
             var gameState = state.Clone();
             gameState.GameStage = GameStage.InProgress;
             gameState.Cards = _cardGenerator.GenerateCards(_boardWidth);
+            gameState.Players.First().HasCurrentTurn = true;
             return gameState;
         }
     }

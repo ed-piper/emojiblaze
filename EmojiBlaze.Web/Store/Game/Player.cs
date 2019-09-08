@@ -8,5 +8,6 @@
         }
 
         public string Name { get; }
+        public bool HasCurrentTurn { get; set; }
     }
 }

@@ -60,6 +60,8 @@
                 </e>
                 <e p="Shared" t="Include">
                   <e p="AddPlayer.razor.g.cs" t="Include" />
+                  <e p="Board.razor.g.cs" t="Include" />
+                  <e p="CardView.razor.g.cs" t="Include" />
                   <e p="MainLayout.razor.g.cs" t="Include" />
                   <e p="PlayerList.razor.g.cs" t="Include" />
                 </e>
@@ -84,6 +86,7 @@
           <e p="Game" t="Include">
             <e p="Actions" t="Include">
               <e p="AddPlayerAction.cs" t="Include" />
+              <e p="FlipCardAction.cs" t="Include" />
               <e p="StartGameAction.cs" t="Include" />
             </e>
             <e p="Card.cs" t="Include" />
@@ -93,6 +96,7 @@
             <e p="Player.cs" t="Include" />
             <e p="Reducers" t="Include">
               <e p="AddPlayerReducer.cs" t="Include" />
+              <e p="FlipCardReducer.cs" t="Include" />
               <e p="StartGameReducer.cs" t="Include" />
             </e>
           </e>

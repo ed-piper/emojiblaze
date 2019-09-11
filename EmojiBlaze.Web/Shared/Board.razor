@@ -4,6 +4,11 @@
 @inject IDispatcher Dispatcher
 @inherits Blazor.Fluxor.Components.FluxorComponent
 
+@if (GameState.Value.GameStage == GameStage.Completed)
+{
+    <h1>Game Complete!</h1>
+}
+
 @if (GameState.Value.Cards != null)
 {
     @foreach (var rowX in GameState.Value.Cards.Select(x => x.X).Distinct())
@@ -25,6 +30,5 @@
     {
         base.OnInitialized();
         GameState.Subscribe(this);
-        
     }
 }

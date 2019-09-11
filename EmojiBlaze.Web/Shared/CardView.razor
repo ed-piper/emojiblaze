@@ -1,7 +1,5 @@
-﻿@using System.ComponentModel
-@using Blazor.Fluxor
+﻿@using Blazor.Fluxor
 @using EmojiBlaze.Web.Store.Game.Actions
-@using Pairs.Store.Game.Reducers
 @using Store.Game
 @inject IState<GameState> GameState
 @inject IDispatcher Dispatcher
@@ -21,7 +19,7 @@
     }
     else
     {
-        <div>X</div>
+        <div>✔</div>
     }
 </div>
 

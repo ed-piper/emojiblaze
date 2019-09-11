@@ -36,6 +36,10 @@ namespace Pairs.Store.Game.Reducers
             gameState.Players[currentPlayerIndex].HasCurrentTurn = false;
             gameState.Players[newPlayerIndex].HasCurrentTurn = true;
 
+            if (gameState.Cards.All(x => !x.IsInPlay))
+            {
+                gameState.GameStage = GameStage.Completed;
+            }
 
             return gameState;
         }

@@ -9,5 +9,6 @@
 
         public string Name { get; }
         public bool HasCurrentTurn { get; set; }
+        public int Score { get; set; }
     }
 }

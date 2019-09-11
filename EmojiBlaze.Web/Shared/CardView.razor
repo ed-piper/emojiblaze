@@ -1,31 +1,40 @@
 ﻿@using System.ComponentModel
 @using Blazor.Fluxor
 @using EmojiBlaze.Web.Store.Game.Actions
+@using Pairs.Store.Game.Reducers
 @using Store.Game
 @inject IState<GameState> GameState
 @inject IDispatcher Dispatcher
 @inherits Blazor.Fluxor.Components.FluxorComponent
 
 <div @onclick="@(() => Flip())">
-    @if (Card.IsFaceDown)
+    @if (Card.IsInPlay)
     {
-        <div>🃏</div>
+        @if (Card.IsFaceDown)
+        {
+            <div>🃏</div>
+        }
+        else
+        {
+            <div>@Card.Symbol</div>
+        }
     }
     else
     {
-        <div>@Card.Symbol</div>
+        <div>X</div>
     }
 </div>
 
 @code {
+
     [Parameter]
     public Card Card { get; set; }
 
     public void Flip()
     {
-        Dispatcher.Dispatch(new FlipCardAction(Card));
+        Dispatcher.Dispatch(new TakeTurnAction(Card));
     }
-    
+
     protected override void OnInitialized()
     {
         base.OnInitialized();

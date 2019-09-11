@@ -1,8 +1,8 @@
 ﻿namespace EmojiBlaze.Web.Store.Game.Actions
 {
-    public class FlipCardAction
+    public class TakeTurnAction
     {
-        public FlipCardAction(Card card)
+        public TakeTurnAction(Card card)
         {
             Card = card;
         }

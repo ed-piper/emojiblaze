@@ -14,7 +14,7 @@
     @foreach (var player in GameState.Value.Players)
     {
         <p class="@(player.HasCurrentTurn ? "font-weight-bold" : string.Empty)">
-            <span class="@(player.HasCurrentTurn ? "text-primary" : "text-secondary")">@player.Name</span> Score: 0
+            <span class="@(player.HasCurrentTurn ? "text-primary" : "text-secondary")">@player.Name</span> Score: @player.Score
         </p>
     }
 </div>
@@ -27,6 +27,12 @@
     private void StartGame()
     {
         Dispatcher.Dispatch(new StartGameAction());
+    }
+    
+    protected override void OnInitialized()
+    {
+        base.OnInitialized();
+        GameState.Subscribe(this);
     }
 
 }

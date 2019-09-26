@@ -5,7 +5,7 @@
 @inject IDispatcher Dispatcher
 @inherits Blazor.Fluxor.Components.FluxorComponent
 
-<div @onclick="@(() => Flip())">
+<div @onclick="Flip">
     @if (Card.IsInPlay)
     {
         @if (Card.IsFaceDown)

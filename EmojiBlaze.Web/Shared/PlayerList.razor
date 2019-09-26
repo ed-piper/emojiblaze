@@ -8,7 +8,7 @@
 <div>
     @if (CanStartGame)
     {
-        <button @onclick="@(() => StartGame())">Start Game</button>
+        <button @onclick="StartGame">Start Game</button>
     }
 
     @foreach (var player in GameState.Value.Players)

@@ -5,30 +5,20 @@
 @inject IState<GameState> GameState
 @inject IDispatcher Dispatcher
 
-<div>
-    @if (CanStartGame)
-    {
-        <button @onclick="StartGame">Start Game</button>
-    }
+    <div>
+        <div class="row">
+            @foreach (var player in GameState.Value.Players)
+            {
+                <p class="col @(player.HasCurrentTurn ? "font-weight-bold" : string.Empty)">
+                    <span class="@(player.HasCurrentTurn ? "text-primary" : "text-secondary")">@player.Name</span> Score: @player.Score
+                </p>
+            }
+        </div>
 
-    @foreach (var player in GameState.Value.Players)
-    {
-        <p class="@(player.HasCurrentTurn ? "font-weight-bold" : string.Empty)">
-            <span class="@(player.HasCurrentTurn ? "text-primary" : "text-secondary")">@player.Name</span> Score: @player.Score
-        </p>
-    }
-</div>
+
+    </div>
 
 @code {
-
-    private bool CanStartGame => GameState.Value.GameStage != GameStage.InProgress &&
-                                 GameState.Value.Players.Count > 1;
-
-    private void StartGame()
-    {
-        Dispatcher.Dispatch(new StartGameAction());
-    }
-    
     protected override void OnInitialized()
     {
         base.OnInitialized();

@@ -11,7 +11,7 @@ namespace Pairs.Store.Game.Reducers
     public class StartGameReducer : Reducer<GameState, StartGameAction>
     {
         private readonly ICardGenerator _cardGenerator;
-        private readonly int _boardWidth = 8;
+        private readonly int _boardWidth = 4;
 
         public StartGameReducer(ICardGenerator cardGenerator)
         {

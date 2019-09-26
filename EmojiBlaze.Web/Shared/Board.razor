@@ -9,7 +9,7 @@
     <h1>Game Complete!</h1>
 }
 
-@if (GameState.Value.Cards != null)
+@if (GameState.Value.Cards != null && !GameOver)
 {
     @foreach (var rowX in GameState.Value.Cards.Select(x => x.X).Distinct())
     {
@@ -24,7 +24,18 @@
     }
 }
 
+@if (GameOver) { 
+    <h1>@Winner has won</h1>
+}
+
+
 @code {
+
+    private bool GameOver => GameState.Value.GameStage == GameStage.Completed;
+
+    //TODO: Handle draws
+    private string Winner => GameState.Value.Players.OrderByDescending(x => x.Score).First().Name;
+
 
     protected override void OnInitialized()
     {

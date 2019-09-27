@@ -1,6 +1,6 @@
 ﻿using Blazor.Fluxor;
 
-namespace EmojiBlaze.Web.Store.Game
+namespace EmojiBlaze.Models.Store.Game
 {
     public class GameFeature : Feature<GameState>
     {

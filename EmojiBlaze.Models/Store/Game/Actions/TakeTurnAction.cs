@@ -1,4 +1,4 @@
-﻿namespace EmojiBlaze.Web.Store.Game.Actions
+﻿namespace EmojiBlaze.Models.Store.Game.Actions
 {
     public class TakeTurnAction
     {

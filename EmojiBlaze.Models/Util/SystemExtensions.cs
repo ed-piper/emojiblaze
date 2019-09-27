@@ -1,4 +1,4 @@
-﻿namespace EmojiBlaze.Web.Util
+﻿namespace EmojiBlaze.Models.Util
 {
     public static class SystemExtensions
     {

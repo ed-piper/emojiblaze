@@ -1,5 +1,6 @@
 using Blazor.Fluxor;
-using EmojiBlaze.Web.Models.Board;
+using EmojiBlaze.Models.Models.Board;
+using EmojiBlaze.Models.Store.Game;
 using Microsoft.AspNetCore.Components.Builder;
 using Microsoft.Extensions.DependencyInjection;
 
@@ -11,7 +12,7 @@ namespace EmojiBlaze.Web
         {
             services.AddTransient<ICardGenerator, CardGenerator>();
             services.AddFluxor(options => options
-                .UseDependencyInjection(typeof(Startup).Assembly)
+                .UseDependencyInjection(typeof(GameState).Assembly)
                 .AddMiddleware<Blazor.Fluxor.ReduxDevTools.ReduxDevToolsMiddleware>()
                 .AddMiddleware<Blazor.Fluxor.Routing.RoutingMiddleware>()
             );

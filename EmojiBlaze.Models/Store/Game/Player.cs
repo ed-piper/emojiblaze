@@ -1,4 +1,4 @@
-﻿namespace EmojiBlaze.Web.Store.Game
+﻿namespace EmojiBlaze.Models.Store.Game
 {
     public class Player
     {

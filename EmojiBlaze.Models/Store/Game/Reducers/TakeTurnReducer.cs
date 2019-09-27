@@ -1,10 +1,9 @@
 ﻿using System.Linq;
 using Blazor.Fluxor;
-using EmojiBlaze.Web.Store.Game;
-using EmojiBlaze.Web.Store.Game.Actions;
-using EmojiBlaze.Web.Util;
+using EmojiBlaze.Models.Store.Game.Actions;
+using EmojiBlaze.Models.Util;
 
-namespace Pairs.Store.Game.Reducers
+namespace EmojiBlaze.Models.Store.Game.Reducers
 {
     public class TakeTurnReducer : Reducer<GameState, TakeTurnAction>
     {

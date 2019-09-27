@@ -1,12 +1,11 @@
 ﻿using System;
 using System.Linq;
 using Blazor.Fluxor;
-using EmojiBlaze.Web.Models.Board;
-using EmojiBlaze.Web.Store.Game;
-using EmojiBlaze.Web.Store.Game.Actions;
-using EmojiBlaze.Web.Util;
+using EmojiBlaze.Models.Models.Board;
+using EmojiBlaze.Models.Store.Game.Actions;
+using EmojiBlaze.Models.Util;
 
-namespace Pairs.Store.Game.Reducers
+namespace EmojiBlaze.Models.Store.Game.Reducers
 {
     public class StartGameReducer : Reducer<GameState, StartGameAction>
     {

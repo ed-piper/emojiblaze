@@ -1,9 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using EmojiBlaze.Web.Store.Game;
+using EmojiBlaze.Models.Store.Game;
 
-namespace EmojiBlaze.Web.Models.Board
+namespace EmojiBlaze.Models.Models.Board
 {
     public class CardGenerator : ICardGenerator
     {

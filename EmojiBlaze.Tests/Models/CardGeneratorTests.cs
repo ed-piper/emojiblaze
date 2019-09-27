@@ -1,4 +1,4 @@
-﻿using EmojiBlaze.Web.Models.Board;
+﻿using EmojiBlaze.Models.Models.Board;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using Shouldly;
 

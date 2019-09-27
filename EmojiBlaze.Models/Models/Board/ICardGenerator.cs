@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
-using EmojiBlaze.Web.Store.Game;
+using EmojiBlaze.Models.Store.Game;
 
-namespace EmojiBlaze.Web.Models.Board
+namespace EmojiBlaze.Models.Models.Board
 {
     public interface ICardGenerator
     {

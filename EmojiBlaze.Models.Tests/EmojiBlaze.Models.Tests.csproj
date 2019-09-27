@@ -21,4 +21,8 @@
     <ProjectReference Include="..\EmojiBlaze.Models\EmojiBlaze.Models.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Store\Game\Actions\" />
+  </ItemGroup>
+
 </Project>

@@ -1,5 +1,5 @@
 using Blazor.Fluxor;
-using EmojiBlaze.Models.Models.Board;
+using EmojiBlaze.Models.Board;
 using EmojiBlaze.Models.Store.Game;
 using Microsoft.AspNetCore.Components.Builder;
 using Microsoft.Extensions.DependencyInjection;

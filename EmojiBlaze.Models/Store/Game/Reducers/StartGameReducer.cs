@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Linq;
 using Blazor.Fluxor;
-using EmojiBlaze.Models.Models.Board;
+using EmojiBlaze.Models.Board;
 using EmojiBlaze.Models.Store.Game.Actions;
 using EmojiBlaze.Models.Util;
 

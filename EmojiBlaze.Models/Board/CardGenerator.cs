@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using EmojiBlaze.Models.Store.Game;
 
-namespace EmojiBlaze.Models.Models.Board
+namespace EmojiBlaze.Models.Board
 {
     public class CardGenerator : ICardGenerator
     {

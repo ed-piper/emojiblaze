@@ -22,11 +22,11 @@ namespace EmojiBlaze.Models.Store.Game
         
         public int Y { get; private set; }
 
-        public string Symbol { get; private set; }
+        public string Symbol { get; }
 
         public bool IsFaceDown { get; set; }
 
         public bool IsInPlay { get; set; }
-        public Guid Id { get; private set; }
+        public Guid Id { get; }
     }
 }

@@ -10,14 +10,21 @@ namespace EmojiBlaze.Models.Tests.Store.Game.Reducers
     [TestClass]
     public class AddPlayerReducerTests
     {
+        private AddPlayerReducer _sut;
+
+        [TestInitialize]
+        public void Init()
+        {
+            _sut = new AddPlayerReducer();
+        }
+
         [TestMethod]
         public void Reduce_WithUniquePlayerName_AddsPlayer()
         {
             const string playerName = "Peppa Pig";
 
             var gameState = new GameState();
-            var sut = BuildSut();
-            var updatedState = sut.Reduce(gameState, new AddPlayerAction(playerName));
+            var updatedState = _sut.Reduce(gameState, new AddPlayerAction(playerName));
             updatedState.Players.Count.ShouldBe(1);
             updatedState.Players.Single().Name.ShouldBe(playerName);
         }
@@ -29,15 +36,9 @@ namespace EmojiBlaze.Models.Tests.Store.Game.Reducers
             var gameState = new GameState();
             gameState.Players.Add(new Player(playerName));
 
-            var sut = BuildSut();
-            var updatedState = sut.Reduce(gameState, new AddPlayerAction(playerName));
+            var updatedState = _sut.Reduce(gameState, new AddPlayerAction(playerName));
             updatedState.Players.Count.ShouldBe(1);
             updatedState.Players.Single().Name.ShouldBe(playerName);
-        }
-
-        private AddPlayerReducer BuildSut()
-        {
-            return new AddPlayerReducer();
         }
     }
 }

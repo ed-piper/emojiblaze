@@ -25,7 +25,7 @@
 }
 
 @if (GameOver) { 
-    <h1>@Winner has won</h1>
+    <h1>@GameOverMessage</h1>
 }
 
 
@@ -33,9 +33,17 @@
 
     private bool GameOver => GameState.Value.GameStage == GameStage.Completed;
 
-    //TODO: Handle draws
-    private string Winner => GameState.Value.Players.OrderByDescending(x => x.Score).First().Name;
 
+    private string GameOverMessage
+    {
+        get
+        {
+            if (!GameOver) return string.Empty;
+
+            var scoreGrouping = GameState.Value.Players.GroupBy(x => x.Score).OrderByDescending(x => x.Key).First();
+            return scoreGrouping.Count() == 1 ? $"{scoreGrouping.Single().Name} is the winner! " : $"It's a tie between {scoreGrouping.Count()} players!";
+        }
+    }
 
     protected override void OnInitialized()
     {

@@ -5,23 +5,24 @@
 @inject IDispatcher Dispatcher
 @inherits Blazor.Fluxor.Components.FluxorComponent
 
-<div @onclick="Flip">
-    @if (Card.IsInPlay)
+
+@if (Card.IsInPlay)
+{
+    @if (Card.IsFaceDown)
     {
-        @if (Card.IsFaceDown)
-        {
-            <div>🃏</div>
-        }
-        else
-        {
-            <div>@Card.Symbol</div>
-        }
+        <div class="cursor-pointer" @onclick="Flip">🃏</div>
     }
     else
     {
-        <div>✔</div>
+        <div>@Card.Symbol</div>
     }
-</div>
+}
+else
+{
+
+    <div>✔</div>
+}
+
 
 @code {
 

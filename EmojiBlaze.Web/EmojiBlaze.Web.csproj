@@ -8,7 +8,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="Blazor.Fluxor" Version="1.0.0" />
+    <PackageReference Include="Blazor.Fluxor" Version="1.1.0" />
     <PackageReference Include="BlazorPWA.MSBuild" Version="1.0.0">
       <PrivateAssets>all</PrivateAssets>
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>

@@ -1,6 +1,5 @@
 ﻿@using Blazor.Fluxor
 @using EmojiBlaze.Models.Store.Game
-@using EmojiBlaze.Models.Store.Game.Actions
 @inject IState<GameState> GameState
 @inject IDispatcher Dispatcher
 @inherits Blazor.Fluxor.Components.FluxorComponent
@@ -21,23 +20,4 @@ else
 {
 
     <div>✔</div>
-}
-
-
-@code {
-
-    [Parameter]
-    public Card Card { get; set; }
-
-    public void Flip()
-    {
-        Dispatcher.Dispatch(new TakeTurnAction(Card));
-    }
-
-    protected override void OnInitialized()
-    {
-        base.OnInitialized();
-        GameState.Subscribe(this);
-    }
-
 }

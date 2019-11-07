@@ -9,6 +9,8 @@ namespace EmojiBlaze.Web.Shared
         [Parameter]
         public Card Card { get; set; }
 
+        private string HtmlId => Card.X.ToString() + "_" + Card.Y.ToString();
+
         public void Flip()
         {
             Dispatcher.Dispatch(new TakeTurnAction(Card));

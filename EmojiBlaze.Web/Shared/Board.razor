@@ -2,6 +2,7 @@
 @using EmojiBlaze.Models.Store.Game
 @inject IState<GameState> GameState
 @inject IDispatcher Dispatcher
+
 @inherits Blazor.Fluxor.Components.FluxorComponent
 
 @if (GameState.Value.GameStage == GameStage.Completed)
@@ -11,19 +12,22 @@
 
 @if (GameState.Value.Cards != null && !GameOver)
 {
-    @foreach (var rowX in GameState.Value.Cards.Select(x => x.X).Distinct())
-    {
-        <div class="row">
-            @foreach (var card in GameState.Value.Cards.Where(x => x.X == rowX))
-            {
-                <div class="col">
-                    <CardView Card="@card"></CardView>
-                </div>
-            }
-        </div>
-    }
+    <div class="container-fluid">
+        @foreach (var rowX in GameState.Value.Cards.Select(x => x.X).Distinct())
+        {
+            <div class="row h-25">
+                @foreach (var card in GameState.Value.Cards.Where(x => x.X == rowX))
+                {
+                    <div class="col">
+                        <CardView Card="@card"></CardView>
+                    </div>
+                }
+            </div>
+        }
+    </div>
 }
 
-@if (GameOver) { 
+@if (GameOver)
+{
     <h1>@GameOverMessage</h1>
 }

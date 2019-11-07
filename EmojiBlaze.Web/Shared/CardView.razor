@@ -3,21 +3,37 @@
 @inject IState<GameState> GameState
 @inject IDispatcher Dispatcher
 @inherits Blazor.Fluxor.Components.FluxorComponent
+@inject IJSRuntime JSRuntime;
 
-
-@if (Card.IsInPlay)
-{
-    @if (Card.IsFaceDown)
+<div id="@HtmlId">
+    @if (Card.IsInPlay)
     {
-        <div class="cursor-pointer" @onclick="Flip">🃏</div>
+        @if (Card.IsFaceDown)
+        {
+            <div class="cursor-pointer" @onclick="Flip">🃏</div>
+        }
+        else
+        {
+            <div>@Card.Symbol</div>
+        }
     }
     else
     {
-        <div>@Card.Symbol</div>
+        <div>✔</div>
     }
-}
-else
-{
+</div>
 
-    <div>✔</div>
+@code {
+    protected override async Task OnAfterRenderAsync(bool firstRender)
+    {
+        if (firstRender)
+        {
+            await FitText();
+        }
+    }
+
+    private async Task FitText()
+    {
+        await JSRuntime.InvokeVoidAsync("fitText", HtmlId);
+    }
 }

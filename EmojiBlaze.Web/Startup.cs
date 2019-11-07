@@ -3,7 +3,6 @@ using EmojiBlaze.Models.Board;
 using EmojiBlaze.Models.Store.Game;
 using Microsoft.AspNetCore.Components.Builder;
 using Microsoft.Extensions.DependencyInjection;
-
 namespace EmojiBlaze.Web
 {
     public class Startup

@@ -7,7 +7,6 @@ namespace EmojiBlaze.Web.Shared
     {
         private bool GameOver => GameState.Value.GameStage == GameStage.Completed;
 
-
         private string GameOverMessage
         {
             get
@@ -24,5 +23,7 @@ namespace EmojiBlaze.Web.Shared
             base.OnInitialized();
             GameState.Subscribe(this);
         }
+
+
     }
 }

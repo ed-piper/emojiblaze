@@ -4,13 +4,12 @@
 @inject IState<GameState> GameState
 @inject IDispatcher Dispatcher
 
-<div>
-    <div class="row">
-        @foreach (var player in GameState.Value.Players)
-        {
-            <p class="col @(player.HasCurrentTurn ? "font-weight-bold" : string.Empty)">
-                <span class="@(player.HasCurrentTurn ? "text-primary" : "text-secondary")">@player.Name</span> Score: @player.Score
-            </p>
-        }
-    </div>
+
+<div class="row">
+    @foreach (var player in GameState.Value.Players)
+    {
+        <p class="col @(player.HasCurrentTurn ? "font-weight-bold" : string.Empty)">
+            <span class="@(player.HasCurrentTurn ? "text-primary" : "text-secondary")">@player.Name</span> Score: @player.Score
+        </p>
+    }
 </div>

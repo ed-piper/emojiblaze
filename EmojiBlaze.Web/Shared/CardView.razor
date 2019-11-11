@@ -5,21 +5,21 @@
 @inherits Blazor.Fluxor.Components.FluxorComponent
 @inject IJSRuntime JSRuntime;
 
-<div id="@HtmlId" class="h-100 col">
+<div id="@HtmlId" class="grid-item">
     @if (Card.IsInPlay)
     {
         @if (Card.IsFaceDown)
         {
-            <div class="cursor-pointer h-100" @onclick="Flip">🃏</div>
+            <div class="cursor-pointer" @onclick="Flip">🃏</div>
         }
         else
         {
-            <div class="h-100">@Card.Symbol</div>
+            <div>@Card.Symbol</div>
         }
     }
     else
     {
-        <div class="h-100">✔</div>
+        <div>✔</div>
     }
 </div>
 

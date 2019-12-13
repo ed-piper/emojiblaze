@@ -12,20 +12,19 @@
 
 @if (GameState.Value.Cards != null && !GameOver)
 {
+    <div class="grid-container min-vh-100">
         @foreach (var rowX in GameState.Value.Cards.Select(x => x.X).Distinct())
         {
-            <div class="d-flex flex-row flex-grow-1">
-                @foreach (var card in GameState.Value.Cards.Where(x => x.X == rowX))
-                {
-                    <div class="d-flex flex-grow-1">
-                        <CardView Card="@card"></CardView>
-                    </div>
-                }
-            </div>
+            @foreach (var card in GameState.Value.Cards.Where(x => x.X == rowX))
+            {
+                <CardView Card="@card"></CardView>
+            }
         }
+    </div>
 }
 
 @if (GameOver)
 {
     <h1>@GameOverMessage</h1>
 }
+

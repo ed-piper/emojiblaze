@@ -7,6 +7,7 @@
 * Modified by Slawomir Kolodziej http://slawekk.info
 *
 * Date: Tue Aug 09 2011 10:45:54 GMT+0200 (CEST)
+
 */
 (function(){
 
@@ -36,8 +37,11 @@
     var fit = function (el) {
       var compressor = kompressor || 1;
 
+        console.log(el.clientWidth);
+
       var resizer = function () {
-        el.style.fontSize = Math.max(Math.min(el.clientWidth / (compressor*10), parseFloat(settings.maxFontSize)), parseFloat(settings.minFontSize)) + 'px';
+        //Modified from original
+        el.style.fontSize = el.clientWidth * 0.65 + 'px';
       };
 
       // Call once to set.

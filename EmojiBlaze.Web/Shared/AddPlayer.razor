@@ -6,13 +6,10 @@
 
 @if (GameState.Value.GameStage == GameStage.NotStarted)
 {
-    <div class="row">
-        <div class="col">
-            <input placeholder="Player Name" @bind="PlayerName" />
-            <button @onclick="Add">Add Player</button>
-        </div>
-    </div>
 
+    <input placeholder="Player Name" @bind="PlayerName" />
+    <button @onclick="Add">Add Player</button>
+  
     @if (CanStartGame)
     {
         <div class="row mt-1">

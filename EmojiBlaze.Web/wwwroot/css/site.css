@@ -141,6 +141,11 @@ app {
     cursor: pointer;
 }
 
+.container-fluid {
+    height:100%;
+    padding:0;
+}
+
 .grid-container {
     display: grid;
     height: 100%;

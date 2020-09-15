@@ -12,7 +12,7 @@
 
 @if (GameState.Value.Cards != null && !GameOver)
 {
-    <div class="grid-container min-vh-100">
+    <div class="grid-container">
         @foreach (var rowX in GameState.Value.Cards.Select(x => x.X).Distinct())
         {
             @foreach (var card in GameState.Value.Cards.Where(x => x.X == rowX))
